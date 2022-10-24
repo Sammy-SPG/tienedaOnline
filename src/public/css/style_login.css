@@ -1,0 +1,19 @@
+#form{
+    padding: 15px;
+    border: 1px solid #cccc;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: 0 0 0.8px rgba(0, 0, 0, 0.5);
+}
+
+#form > h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 100%;
+}

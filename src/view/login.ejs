@@ -1,0 +1,37 @@
+<%- include('./partials/header_index.ejs') %>
+  <link rel="stylesheet" href="./css/style_login.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.linkedin.com/in/samuel-palomares-38b804253/">
+          <img src="./images/logo.jpg" alt="" width="50" height="40" style="border-radius: 50%;">
+          Samuel Palomares
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <form action="" id="form">
+        <h4>Iniciar sesion</h4>
+        <div class="mb-3 row container-from-control">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email: </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="staticEmail" value="" name="email">
+          </div>
+        </div>
+        <div class="mb-3 row container-from-control">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password: </label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" name="password">
+          </div>
+        </div>
+        <div class="col-auto container-from-control">
+          <button type="submit" class="btn btn-warning mb-3">Iniciar sesion</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./js/login.js"></script>
+
+  </html>

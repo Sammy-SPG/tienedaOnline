@@ -1,0 +1,32 @@
+.container{
+    margin-top: 20px;
+}
+
+.form-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.btn,
+.from-control {
+    margin: 5px 5px;
+}
+
+.container-foother{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-total{
+    display: flex;
+    font-size: large;
+}
+
+.container-total > p{
+    margin-left: 5px;
+    font-weight: 600;
+}
+

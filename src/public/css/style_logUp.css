@@ -1,0 +1,14 @@
+.containerFrom{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #cccc;
+    border-radius: 20px;
+    margin-top: 10vh;
+    box-shadow: 0 0 0.8px rgba(0, 0, 0, 0.5);
+}
+
+.containerFrom > h4{
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,33 @@
+<%- include('./partials/header_index.ejs') %>
+<script src="./js/user.js" defer></script>
+    <link rel="stylesheet" href="./css/style_cardProduct.css">
+    <link rel="stylesheet" href="./css/style_index.css">
+</head>
+
+<body>
+    <%- include('./partials/navigation.ejs') %> 
+    <div class="container">
+        <div class="container_gridProduct">
+
+        </div>
+    </div>
+
+    <template class="templateProduct">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-name">Some quick example text to build on the card title and make up the bulk of thec
+                    ard's content.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$
+                        <span class="amount">1</span>
+                        <span class="currency">mx</span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </template>
+    <%- include('./partials/foother_index.ejs') %>

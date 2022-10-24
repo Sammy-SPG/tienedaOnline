@@ -1,0 +1,98 @@
+.container {
+    margin-top: 20px;
+}
+
+.card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toShare {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: -8px;
+    left: 95%;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toShare>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.img-fluid {
+    height: 100%;
+}
+
+.card-title {
+    font-size: 2.2rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #212F3D;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #2ECC71;
+}
+
+.payment-methods {
+    text-align: center;
+    display: flex;
+}
+
+.ui-pdp-payment-icon__container {
+    margin: 5px 6px 5px;
+}
+
+.actionsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+.btn-ac {
+    width: 50%;
+    margin: 5px;
+}
+
+.update {
+    display: block;
+    text-align: end;
+    padding-top: 2rem;
+}
+
+.from{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.from > div{
+    width: 70%;
+}
+
+.submit{
+    max-width: 8rem;
+}
+
+/* Estilos del modal */
+
+.modal-footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.btn-buy{
+    width: 40%;
+}

@@ -1,0 +1,25 @@
+.card {
+    margin: auto;
+}
+
+.card-img-top {
+    max-height: 320px;
+    min-height: 320px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list-group-item,
+.list-group,
+.btn-success {
+    width: 100%;
+}
+
+.amount {
+    color: #2ECC71;
+}

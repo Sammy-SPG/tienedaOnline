@@ -1,0 +1,9 @@
+.containerCart{
+    position: relative;
+}
+
+.containerCart > p{
+    position: absolute;
+    left: 80%;
+    top: 0;
+}

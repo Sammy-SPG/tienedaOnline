@@ -1,0 +1,103 @@
+<%- include('./partials/header_index.ejs') %>
+<link rel="stylesheet" href="./css/style_product.css">
+<script src="https://js.stripe.com/v3/"></script>
+<script src="./js/checkout.js" defer></script>
+<script src="./js/user.js" defer></script>
+</head>
+    <body>
+        <%- include('./partials/navigation.ejs') %>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Comprar producto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="payment-element">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success buy btn-buy" data-id=<%=product.id %> data-price=<%= price %> >Comprar ahora</button>
+                            <button type="button" class="btn btn-secondary btn-buy" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src=<%=product.images[0] %> class="img-fluid rounded-start" alt="compartir">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="toShare">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/share-2.png" />
+                            </div>
+                            <h5 class="card-title"><%= title %></h5>
+                            <p class="card-text description"><%= product.description %></p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item price">$
+                                    <span class="price_product"><%= price %></span>
+                                </li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> Medios de pago </li>
+                                <li class="list-group-item">
+                                    <div class="payment-methods">
+                                        <div class="ui-pdp-payment-icon__container">
+                                            <div class="ui-pdp-payment-icon__size">
+                                                <img decoding="async"
+                                                        src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg"
+                                                        class="ui-pdp-image ui-pdp-payment-icon" alt="Visa">
+                                            </div>
+                                        </div>
+                                        <div class="ui-pdp-payment-icon__container">
+                                            <div class="ui-pdp-payment-icon__size">
+                                                <img decoding="async"
+                                                        src="https://http2.mlstatic.com/storage/logos-api-admin/b2c93a40-f3be-11eb-9984-b7076edb0bb7-m.svg"
+                                                        class="ui-pdp-image ui-pdp-payment-icon" alt="American Express">
+                                            </div>
+                                        </div>
+                                        <div class="ui-pdp-payment-icon__container">
+                                            <div class="ui-pdp-payment-icon__size">
+                                                <img decoding="async"
+                                                        src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg"
+                                                        class="ui-pdp-image ui-pdp-payment-icon" alt="Mastercard">
+                                            </div>
+                                        </div>
+                                        <div class="ui-pdp-payment-icon__container">
+                                            <div class="ui-pdp-payment-icon__size">
+                                                <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/91b830e0-f39b-11eb-9984-b7076edb0bb7-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="OXXO">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="actionsBtn">
+                                <button class="btn btn-success btn-ac" data-bs-toggle="modal" data-bs-target="#exampleModal" >Comprar</button>
+                                <button class="btn btn-primary btn-ac" data-id=<%=product.id %> >Agregar al carrito</button>
+                            </div>
+                            <p class="card-text update"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <p>Haz una pregunta</p>
+                <form class="from">
+                    <div class="mb-3">
+                        <label for="Coment" class="visually-hidden">Comentario</label>
+                        <input type="text" class="form-control" id="coment">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3 submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/addCart.js"></script>
+    <script src="./js/localStorage.js"></script>
+</body>
+</html>
