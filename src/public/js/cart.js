@@ -80,7 +80,7 @@ document.querySelector('.btn-but-success').addEventListener('click', async (e) =
     const { error } = await stripe.confirmPayment({
         elements,
         confirmParams: {
-            return_url: `http://localhost:3000/confirm-payment/`,
+            return_url: `https://tiendaonlinespg.herokuapp.com/confirm-payment`,
         },
     });
 
